@@ -21,7 +21,7 @@ def run(geojson: str = "sc_associacoes.geojson", dfm_csv: str = "dfm.csv") -> No
         color_continuous_scale="Reds",
         range_color=[vmin, vmax],
         labels={"tmi": "Infant mortality (‰)"},
-        title="Infant Mortality — Santa Catarina (associations)",
+        title="Infant Mortality Rate(IMR) — Santa Catarina (associations)",
     )
 
     # --- Somente slider (sem botões/play) ---
