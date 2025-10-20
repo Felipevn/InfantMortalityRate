@@ -1,0 +1,24 @@
+# Instruções do Projeto
+
+
+# Abra o terminal ou prompt de comando e navegue até a pasta onde você colocou os arquivos do Lab5 (não use espaço ou acento em nome de pasta)
+
+
+# Execute o comando abaixo para criar a imagem Docker
+
+docker build -t dashboard-imr:imr .
+
+
+# Execute o comando abaixo para criar o container Docker
+
+docker run -dit --name dsa-lab5 -v ./IaC:/iac dsa-terraform-image:lab5 /bin/bash
+
+NOTA: No Windows você deve substituir ./IaC pelo caminho completo da pasta, por exemplo: C:\DSA\Cap10\IaC
+
+#Entrar no container(no Linux)
+ docker exec -it dsa-lab5 bash
+
+# Verifique as versões do Terraform e do AWS CLI com os comandos abaixo
+
+terraform version
+aws --version
